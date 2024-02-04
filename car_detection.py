@@ -49,3 +49,7 @@ for bbox in cars:
 cv2.imshow("car detection", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# 画像を保存する
+output_path = r"data\images\cars_output.jpg"
+cv2.imwrite(output_path, img)
